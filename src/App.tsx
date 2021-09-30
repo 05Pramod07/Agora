@@ -14,7 +14,7 @@ const config: ClientConfig = {
 };
 
 const appId: string = "97875f125e1b4b31911c23f6ca43a2c1"; //ENTER APP ID HERE
-const token: string | null = "00697875f125e1b4b31911c23f6ca43a2c1IABBS5LPBynYFjEUHzllfjkO2XCiLf5i8OHVLvUy+8osMMJBJDUAAAAAEAD+bihbArdEYQEAAQABt0Rh";
+const token: string | null = "00697875f125e1b4b31911c23f6ca43a2c1IACtLgXcHVqTkM90WTUK6YZ15m40sRQ33MXRlKJ0Ax+N58JBJDUAAAAAEADy5cWPm4xWYQEAAQCdjFZh";
 
 const App = () => {
   const [inCall, setInCall] = useState(false);
