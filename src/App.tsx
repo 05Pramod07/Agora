@@ -13,8 +13,8 @@ const config: ClientConfig = {
   mode: "rtc", codec: "vp8",
 };
 
-const appId: string = "97875f125e1b4b31911c23f6ca43a2c1"; //ENTER APP ID HERE
-const token: string | null = "00697875f125e1b4b31911c23f6ca43a2c1IACtLgXcHVqTkM90WTUK6YZ15m40sRQ33MXRlKJ0Ax+N58JBJDUAAAAAEADy5cWPm4xWYQEAAQCdjFZh";
+const appId: string = "38116902f5fa439bbd02729950f2306f"; //ENTER APP ID HERE
+// const token: string | null = "00697875f125e1b4b31911c23f6ca43a2c1IACtLgXcHVqTkM90WTUK6YZ15m40sRQ33MXRlKJ0Ax+N58JBJDUAAAAAEADy5cWPm4xWYQEAAQCdjFZh";
 
 const App = () => {
   const [inCall, setInCall] = useState(false);
@@ -84,7 +84,7 @@ const VideoCall = (props: {
         });
       });
 
-      await client.join(appId, name, token, null);
+      await client.join(appId, name, null, null);
       if (tracks) await client.publish([tracks[0], tracks[1]]);
       setStart(true);
 
